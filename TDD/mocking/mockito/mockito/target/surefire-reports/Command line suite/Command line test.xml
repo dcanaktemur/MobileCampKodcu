@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="Z47U.local" name="com.pillartechnology.mail.AddressSplitterTest" tests="3" failures="0" timestamp="11 Nov 2015 22:27:32 GMT" time="0.341" errors="0">
+  <testcase name="splitsAddressesByComma" time="0.041" classname="com.pillartechnology.mail.AddressSplitterTest"/>
+  <testcase name="sendsEmailByConstructingEmailObject" time="0.019" classname="com.pillartechnology.mail.MailDelivererTest"/>
+  <testcase name="setsTheTimestampOnTheEmail" time="0.003" classname="com.pillartechnology.mail.MailDelivererTest"/>
+</testsuite>
