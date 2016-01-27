@@ -20,7 +20,7 @@ public class TestOrderInformation {
 
         List<String> messages = person.getMessagesHeard();
         //TODO 2 - listeden donen String nesnelerini teyit et
-        assertEquals("?", messages);
+        assertEquals("?", messages.get(0));
 
     }
 }
