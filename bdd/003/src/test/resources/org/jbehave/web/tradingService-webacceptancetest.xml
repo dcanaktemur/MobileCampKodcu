@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+	<context:component-scan base-package="org.jbehave" />
+	
+	<bean id="firefoxDriver" class="org.openqa.selenium.firefox.FirefoxDriver"/>
+	
+	<bean class="org.jbehave.web.acceptance.PageUtils">
+		<property name="webDriver" ref="firefoxDriver"></property>
+	</bean>
+	
+	<bean id="insertStockPage" class="org.jbehave.web.acceptance.InsertStockPage">
+		<qualifier value="insertStockPage"></qualifier>
+		<property name="stockUrl" value="http://localhost:8080/web/"></property>
+	</bean>
+	
+	<bean id="showStatusStockPage" class="org.jbehave.web.acceptance.ShowStockStatusPage">
+		<qualifier value="showStatusStockPage"></qualifier>
+	</bean>
+	
+</beans>
