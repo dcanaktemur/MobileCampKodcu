@@ -24,6 +24,15 @@ public final class TelefonRehberi {
 	}
 
 	@Override
+	public int hashCode() { // hashcode override edildi. aynı objeler aynı hashcodelar ile tutuluyor.hashmap vs hashtable
+		int result = 17;
+		result = 31 * result + alanKod;
+		result = 31 * result + prefix;
+		result = 31 * result + numara;
+		return result;
+	}
+
+	@Override
 	public boolean equals(Object o) {
 		if (o == this)
 			return true;
@@ -39,6 +48,6 @@ public final class TelefonRehberi {
 	public static void main(String[] args) {
 		Map<TelefonRehberi, String> m = new HashMap<TelefonRehberi, String>();
 		m.put(new TelefonRehberi(707, 867, 5309), "Ayse");
-		System.out.println(m.get(new TelefonRehberi(707, 867, 5309)));
+		System.out.println(m.get(new TelefonRehberi(707, 867, 5309))); // farklı referansla karşılaştırılıyor. dolayısıyla hashcode kullanaması lazım aynı obje için aynı hashcode
 	}
 }

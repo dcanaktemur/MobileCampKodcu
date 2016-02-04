@@ -6,7 +6,9 @@ import java.util.Set;
 
 public class ParkInn {
 
-	public static <E> Set<E> birlestir(Set<E> s1, Set<E> s2) {
+	//generic type E,T,P ->> hataları compile anında yakalamak için.
+
+	public static <E> Set<E> birlestir(Set<? extends E> s1, Set<? extends E> s2) { // integer ve double numberdan türüyor dolayısıyla sadece e değil bir de ? extends E dersek E den olan tüm şeyler alınabilir.
 		Set<E> result = new HashSet<E>(s1);
 		result.addAll(s2);
 		return result;
@@ -25,7 +27,7 @@ public class ParkInn {
 		doubles.add(6.0);
 
 		// TODO yorum satirlarini aciniz
-		//Set<Number> numbers = ParkInn.<Number>birlestir(integers, doubles);
-		// System.out.println(numbers);
+		Set<Number> numbers = ParkInn.<Number>birlestir(integers, doubles); // compile da bu satıra kızması gayet normal
+		System.out.println(numbers);
 	}
 }

@@ -2,6 +2,7 @@
 package com.kodcu.examples.venus.madde106;
 
 import java.util.Arrays;
+import java.util.EmptyStackException;
 
 public class Yigin {
 	private Object[] elements;
@@ -20,7 +21,10 @@ public class Yigin {
 	public Object pop() {
 	if (size == 0)
 	 throw new EmptyStackException();
-	 return elements[--size];
+	 //return elements[--size];// ilk eleman null olmuyor. elemanı null a setliyoruz
+	 Object result = elements[--size];
+		elements[size] = null;
+		return result;
 	}
 
 	/**

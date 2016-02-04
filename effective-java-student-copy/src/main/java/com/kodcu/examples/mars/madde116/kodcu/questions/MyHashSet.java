@@ -24,7 +24,7 @@ public class MyHashSet<E> extends HashSet<E> {
 
 	@Override
 	public boolean addAll(Collection<? extends E> c) {
-		addCount += c.size();
+		//addCount += c.size(); // hem superden yukarıdaki add çağrılıyor iki defa addCount artyor. Dolayısıyla inheritaance yapılırken çok dikkatli olmak lazım.
 		return super.addAll(c);
 	}
 

@@ -1,7 +1,7 @@
 
 package com.kodcu.examples.mars.madde115;
 
-public final class Complex {
+public final class Complex { //Immutable pattern ->> String de böyle yapılmış. her setlemede final olduğu için yeni bir obje yaratılıyor ve eşitleniyor. stateler değişmiyor.
 	private final double re;
 	private final double im;
 

@@ -12,9 +12,9 @@ public class Varargs {
     }
 
 
-    static int min(int... args) {
+    static int min(int... args) { //  min(int firstArg,int... args) throw new exceptin yerine ilk eleman alınsın böylece bir eleman vermezsen compile anında senin uyaracak bir değişken verin diye
         if (args.length == 0)
-            throw new IllegalArgumentException("Too few arguments"); // ?
+            throw new IllegalArgumentException("Too few arguments"); // runtime da hata fırlatıyor . Compile anında yakalamlıyız.
         int min = args[0]; // ?
         for (int i = 1; i < args.length; i++)
             if (args[i] < min)
