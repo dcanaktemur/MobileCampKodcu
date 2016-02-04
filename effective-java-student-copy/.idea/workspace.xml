@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07debd52-9f0a-4d9b-b77c-37b0bdde44bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../design-patterns/codes/Observer/yemeksepeti/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../design-patterns/codes/Observer/yemeksepeti/src/com/kodcu/code/GoogleGlassDisplay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../design-patterns/codes/Strategy/strategy/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../design-patterns/codes/Strategy/strategy/src/com/kodcu/strategy/AnalizEdebilme.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../design-patterns/codes/Strategy/strategy/src/com/kodcu/strategy/AnalizUzmaniJunior.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../design-patterns/codes/Strategy/strategy/src/com/kodcu/strategy/AnalizUzmaniSenior.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../design-patterns/codes/Strategy/strategy/src/com/kodcu/strategy/ITUzmaniDogus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../TDD/Homework/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../TDD/Homework/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../design-patterns/codes/Observer/hazelcast/hazelcast/src/main/java/com/captaindebug/hazelcast/pubsub/MarketMaker.java" afterPath="$PROJECT_DIR$/../design-patterns/codes/Observer/hazelcast/hazelcast/src/main/java/com/captaindebug/hazelcast/pubsub/MarketMaker.java" />
     </list>
     <ignored path="effective-java-examples.iws" />
     <ignored path=".idea/workspace.xml" />

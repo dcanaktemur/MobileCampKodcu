@@ -7,7 +7,6 @@ import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
-
 import com.google.common.annotations.VisibleForTesting;
 import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
