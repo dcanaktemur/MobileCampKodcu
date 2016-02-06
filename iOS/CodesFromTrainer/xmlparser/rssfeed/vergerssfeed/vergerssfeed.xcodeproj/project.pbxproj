@@ -227,7 +227,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7AE25D1F1C625107003C0F4E /* Build configuration list for PBXProject "VergeRssFeed" */;
+			buildConfigurationList = 7AE25D1F1C625107003C0F4E /* Build configuration list for PBXProject "vergerssfeed" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -424,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VergeRssFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.furkanavcu.VergeRssFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VergeRssFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.furkanavcu.VergeRssFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -492,7 +494,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7AE25D1F1C625107003C0F4E /* Build configuration list for PBXProject "VergeRssFeed" */ = {
+		7AE25D1F1C625107003C0F4E /* Build configuration list for PBXProject "vergerssfeed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7AE25D4F1C625108003C0F4E /* Debug */,

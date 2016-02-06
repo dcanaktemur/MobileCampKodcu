@@ -25,24 +25,26 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 - (IBAction)convert:(id)sender {
     NSString *soapMessage;
     soapMessage = [NSString stringWithFormat:@"<?xml version=\"1.0\" encoding=\"utf-8\"?>"
                    "<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">"
                    "<soap:Body>"
-                   "<CelsiusToFahrenheit xmlns=\"http://www.w3schools.com/webservices/\">"
+                   "<CelsiusToFahrenheit xmlns=\"http://www.w3schools.com/xml/\">"
                    "<Celsius>%@"
                    "</Celsius>"
                    "</CelsiusToFahrenheit>"
                    "</soap:Body>"
                    "</soap:Envelope>",self.celcius.text];
     
-    NSURL *url = [NSURL URLWithString:@"http://www.w3schools.com/webservices/tempconvert.asmx?op=CelsiusToFahrenheit"];
+    NSURL *url = [NSURL URLWithString:@"http://www.w3schools.com/xml/tempconvert.asmx?op=CelsiusToFahrenheit"];
     NSMutableURLRequest *theRequest = [NSMutableURLRequest requestWithURL:url];
     
     [theRequest addValue:@"www.w3schools.com" forHTTPHeaderField:@"Host"];
     [theRequest addValue: @"text/xml; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
-    [theRequest addValue: @"http://www.w3schools.com/webservices/CelsiusToFahrenheit" forHTTPHeaderField:@"SOAPAction"];
+    [theRequest addValue: @"http://www.w3schools.com/xml/CelsiusToFahrenheit" forHTTPHeaderField:@"SOAPAction"];
     
     [theRequest setHTTPMethod:@"POST"];
     NSMutableData *body = [NSMutableData data];
