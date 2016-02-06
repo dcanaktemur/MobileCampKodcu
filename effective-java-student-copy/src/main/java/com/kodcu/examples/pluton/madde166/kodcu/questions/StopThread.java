@@ -4,7 +4,7 @@ package com.kodcu.examples.pluton.madde166.kodcu.questions;
 import java.util.concurrent.TimeUnit;
 
 public class StopThread {
-	private static boolean stopRequested;
+	private volatile static boolean stopRequested;
 
 	public static void main(String[] args) throws InterruptedException {
 		Thread backgroundThread = new Thread(new Runnable() {
